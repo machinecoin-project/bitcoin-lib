@@ -14,7 +14,7 @@ import org.scalatest.junit.JUnitRunner
 class SighashSpec extends FlatSpec {
   implicit val format = DefaultFormats
 
-  "bitcoin-lib" should "pass reference client sighash tests" in {
+  "machinecoin-lib" should "pass reference client sighash tests" in {
     val stream = classOf[Base58Spec].getResourceAsStream("/data/sighash.json")
     val json = JsonMethods.parse(new InputStreamReader(stream))
     // use tail to skip the first line of the .json file

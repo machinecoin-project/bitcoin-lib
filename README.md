@@ -2,7 +2,7 @@
 
 Simple bitcoin library written in Scala.
 
-[![Build Status](https://travis-ci.org/ACINQ/bitcoin-lib.png)](https://travis-ci.org/ACINQ/bitcoin-lib)
+[![Build Status](https://travis-ci.org/ACINQ/machinecoin-lib.png)](https://travis-ci.org/ACINQ/machinecoin-lib)
 
 ## Overview
 
@@ -47,7 +47,7 @@ Our goal is not to re-implement a full Bitcoin node but to build a library that 
 <dependencies>
   <dependency>
     <groupId>fr.acinq</groupId>
-    <artifactId>bitcoin-lib_2.11</artifactId>
+    <artifactId>machinecoin-lib_2.11</artifactId>
     <version>0.9.17</version>
   </dependency>
 </dependencies>
@@ -57,7 +57,7 @@ The latest snapshot (development) version is 0.9.18-SNAPSHOT, the latest release
 
 ## Segwit support
 
-Bitcoin-lib, starting with version 0.9.7, fully supports segwit (see below for more information) and is on par with the segwit code in Bitcoin Core 0.13.1.
+machinecoin-lib, starting with version 0.9.7, fully supports segwit (see below for more information) and is on par with the segwit code in Bitcoin Core 0.13.1.
 
 ## Usage
 
@@ -387,7 +387,7 @@ This sample demonstrates how to serialize, create and verify a P2WPSH transactio
 
 ### Wallet features
 
-Bitcoin-lib provides and simple and complete implementation of BIP32 and BIP39.
+machinecoin-lib provides and simple and complete implementation of BIP32 and BIP39.
 
 #### HD Wallet (BIP32)
 
@@ -398,12 +398,12 @@ mvn scala:console
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
-[INFO] Building bitcoin-lib 0.9.4-SNAPSHOT
+[INFO] Building machinecoin-lib 0.9.4-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO]
-[INFO] --- scala-maven-plugin:3.2.0:console (default-cli) @ bitcoin-lib_2.11 ---
+[INFO] --- scala-maven-plugin:3.2.0:console (default-cli) @ machinecoin-lib_2.11 ---
 [WARNING]  Expected all dependencies to require Scala version: 2.11.4
-[WARNING]  fr.acinq:bitcoin-lib_2.11:0.9.4-SNAPSHOT requires scala version: 2.11.4
+[WARNING]  fr.acinq:machinecoin-lib_2.11:0.9.4-SNAPSHOT requires scala version: 2.11.4
 [WARNING]  com.github.scopt:scopt_2.11:3.2.0 requires scala version: 2.11.0
 [WARNING] Multiple versions of scala libraries detected!
 [WARNING] scala-maven-plugin cannot fork scala console!!  Running in process
@@ -464,12 +464,12 @@ mvn scala:console
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
-[INFO] Building bitcoin-lib 0.9.4-SNAPSHOT
+[INFO] Building machinecoin-lib 0.9.4-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO]
-[INFO] --- scala-maven-plugin:3.2.0:console (default-cli) @ bitcoin-lib_2.11 ---
+[INFO] --- scala-maven-plugin:3.2.0:console (default-cli) @ machinecoin-lib_2.11 ---
 [WARNING]  Expected all dependencies to require Scala version: 2.11.6
-[WARNING]  fr.acinq:bitcoin-lib_2.11:0.9.4-SNAPSHOT requires scala version: 2.11.6
+[WARNING]  fr.acinq:machinecoin-lib_2.11:0.9.4-SNAPSHOT requires scala version: 2.11.6
 [WARNING]  org.json4s:json4s-jackson_2.11:3.2.11 requires scala version: 2.11.0
 [WARNING] Multiple versions of scala libraries detected!
 [WARNING] scala-maven-plugin cannot fork scala console!!  Running in process
