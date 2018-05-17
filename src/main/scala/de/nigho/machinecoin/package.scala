@@ -1,4 +1,4 @@
-package fr.acinq
+package de.nigho
 
 import java.math.BigInteger
 
@@ -8,7 +8,7 @@ import org.spongycastle.util.encoders.Hex
 /**
   * see https://en.bitcoin.it/wiki/Protocol_specification
   */
-package object bitcoin {
+package object machinecoin {
   val Coin = 100000000L
   val Cent = 1000000L
   val MaxMoney = 35000000 * Coin
