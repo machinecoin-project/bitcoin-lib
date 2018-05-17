@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import scala.annotation.tailrec
 

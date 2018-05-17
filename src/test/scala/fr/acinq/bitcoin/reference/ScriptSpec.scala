@@ -1,8 +1,8 @@
-package fr.acinq.bitcoin.reference
+package de.nigho.machinecoin.reference
 
 import java.io.InputStreamReader
 
-import fr.acinq.bitcoin._
+import de.nigho.machinecoin._
 import org.json4s.JsonAST.{JArray, JDouble, JString}
 import org.json4s.jackson.JsonMethods
 import org.json4s.{DefaultFormats, JValue}

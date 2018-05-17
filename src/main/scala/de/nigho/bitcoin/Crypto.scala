@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
 import java.math.BigInteger

@@ -1,11 +1,9 @@
-package fr.acinq.bitcoin
 
 import java.io.{InputStream, OutputStream}
 import java.math.BigInteger
 import java.nio.ByteOrder
 import java.util
 
-import fr.acinq.bitcoin.Protocol._
 
 object BlockHeader extends BtcSerializer[BlockHeader] {
   override def read(input: InputStream, protocolVersion: Long): BlockHeader = {

@@ -2,7 +2,7 @@ package fr.acinq
 
 import java.math.BigInteger
 
-import fr.acinq.bitcoin.Crypto.PublicKey
+import de.nigho.machinecoin.Crypto.PublicKey
 import org.spongycastle.util.encoders.Hex
 
 /**
@@ -11,7 +11,7 @@ import org.spongycastle.util.encoders.Hex
 package object bitcoin {
   val Coin = 100000000L
   val Cent = 1000000L
-  val MaxMoney = 21000000 * Coin
+  val MaxMoney = 35000000 * Coin
   val MaxScriptElementSize = 520
   val MaxBlockSize = 1000000
   val LockTimeThreshold = 500000000L
@@ -166,9 +166,9 @@ package object bitcoin {
   def computeP2WpkhAddress(pub: PublicKey, chainHash: BinaryData): String = {
     val hash = pub.hash160
     val hrp = chainHash match {
-      case Block.LivenetGenesisBlock.hash => "bc"
-      case Block.TestnetGenesisBlock.hash => "tb"
-      case Block.RegtestGenesisBlock.hash => "bcrt"
+      case Block.LivenetGenesisBlock.hash => "mc"
+      case Block.TestnetGenesisBlock.hash => "tmc"
+      case Block.RegtestGenesisBlock.hash => "rmc"
       case _ => throw new IllegalArgumentException("Unknown chain hash: " + chainHash)
     }
     Bech32.encodeWitnessAddress(hrp, 0, hash)

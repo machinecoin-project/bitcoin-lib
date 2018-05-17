@@ -1,11 +1,11 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
 import java.math.BigInteger
 import java.nio.ByteOrder
 
-import fr.acinq.bitcoin.Crypto.{PrivateKey, PublicKey, Scalar}
-import fr.acinq.bitcoin.Protocol._
+import de.nigho.machinecoin.Crypto.{PrivateKey, PublicKey, Scalar}
+import de.nigho.machinecoin.Protocol._
 
 /**
   * see https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki

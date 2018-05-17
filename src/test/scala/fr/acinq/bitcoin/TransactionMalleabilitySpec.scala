@@ -1,6 +1,6 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
-import fr.acinq.bitcoin.Crypto.PrivateKey
+import de.nigho.machinecoin.Crypto.PrivateKey
 import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.junit.JUnitRunner

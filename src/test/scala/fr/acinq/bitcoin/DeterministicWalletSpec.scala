@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.math.BigInteger
 import java.nio.ByteOrder
@@ -13,7 +13,7 @@ import scala.util.Random
 class DeterministicWalletSpec extends FlatSpec {
 
   import Protocol._
-  import fr.acinq.bitcoin.DeterministicWallet._
+  import de.nigho.machinecoin.DeterministicWallet._
 
   // these tests are the "official" ones (see https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 

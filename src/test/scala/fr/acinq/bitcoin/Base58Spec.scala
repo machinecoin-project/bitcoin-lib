@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.math.BigInteger
 import java.util
@@ -10,7 +10,7 @@ import org.scalatest.junit.JUnitRunner
 @RunWith(classOf[JUnitRunner])
 class Base58Spec extends FlatSpec {
 
-  import fr.acinq.bitcoin.Base58._
+  import de.nigho.machinecoin.Base58._
 
   "Base58" should "encode byte arrays" in {
     assert(encode("Hello World".getBytes("UTF-8")) === "JxF12TrwUP45BMd")

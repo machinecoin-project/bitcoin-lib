@@ -1,6 +1,6 @@
-package fr.acinq.bitcoin.samples
+package de.nigho.machinecoin.samples
 
-import fr.acinq.bitcoin._
+import de.nigho.machinecoin._
 
 object KeysFromXpub extends App {
   /**

@@ -1,8 +1,8 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream, InputStream, OutputStream}
 
-import fr.acinq.bitcoin.Crypto._
+import de.nigho.machinecoin.Crypto._
 
 import scala.annotation.tailrec
 import scala.collection.mutable.ArrayBuffer
@@ -130,7 +130,7 @@ object Script {
 
   import Protocol._
   import ScriptFlags._
-  import fr.acinq.bitcoin.ScriptElt._
+  import de.nigho.machinecoin.ScriptElt._
 
   type Stack = List[Seq[Byte]]
 

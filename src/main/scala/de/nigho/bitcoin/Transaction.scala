@@ -1,10 +1,10 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{ByteArrayOutputStream, InputStream, OutputStream}
 
-import fr.acinq.bitcoin.Crypto.PrivateKey
-import fr.acinq.bitcoin.Protocol._
-import fr.acinq.bitcoin.Script.Runner
+import de.nigho.machinecoin.Crypto.PrivateKey
+import de.nigho.machinecoin.Protocol._
+import de.nigho.machinecoin.Script.Runner
 
 import scala.collection.mutable.ArrayBuffer
 

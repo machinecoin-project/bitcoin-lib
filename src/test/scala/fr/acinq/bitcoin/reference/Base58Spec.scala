@@ -1,9 +1,9 @@
-package fr.acinq.bitcoin.reference
+package de.nigho.machinecoin.reference
 
 import java.io.InputStreamReader
 import java.util
 
-import fr.acinq.bitcoin._
+import de.nigho.machinecoin._
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization
 import org.junit.runner.RunWith

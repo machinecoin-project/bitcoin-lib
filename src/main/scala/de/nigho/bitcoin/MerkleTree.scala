@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 /**
   * see https://en.bitcoin.it/wiki/Protocol_specification#Merkle_Trees

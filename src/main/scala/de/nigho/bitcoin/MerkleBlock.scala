@@ -1,9 +1,9 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{InputStream, OutputStream}
 
-import fr.acinq.bitcoin.MerkleBlock.{toBits, topHeight}
-import fr.acinq.bitcoin.Protocol._
+import de.nigho.machinecoin.MerkleBlock.{toBits, topHeight}
+import de.nigho.machinecoin.Protocol._
 
 import scala.annotation.tailrec
 

@@ -1,9 +1,9 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream, ObjectInputStream, ObjectOutputStream}
 
-import fr.acinq.bitcoin.Base58.Prefix
-import fr.acinq.bitcoin.Crypto._
+import de.nigho.machinecoin.Base58.Prefix
+import de.nigho.machinecoin.Crypto._
 import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.junit.JUnitRunner

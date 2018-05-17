@@ -1,9 +1,9 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io.ByteArrayOutputStream
 
-import fr.acinq.bitcoin.Crypto._
-import fr.acinq.bitcoin.Protocol._
+import de.nigho.machinecoin.Crypto._
+import de.nigho.machinecoin.Protocol._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FunSuite, Matchers}

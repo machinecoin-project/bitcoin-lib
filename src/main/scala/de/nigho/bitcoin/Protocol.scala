@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.io._
 import java.net.{Inet4Address, Inet6Address, InetAddress}
@@ -27,7 +27,7 @@ object Protocol {
     * basic serialization functions
     */
 
-  val PROTOCOL_VERSION = 70015
+  val PROTOCOL_VERSION = 70018
 
   def uint8(input: InputStream): Int = input.read()
 
@@ -193,7 +193,7 @@ object Protocol {
   }
 }
 
-import fr.acinq.bitcoin.Protocol._
+import de.nigho.machinecoin.Protocol._
 
 trait BtcSerializer[T] {
   /**
@@ -258,7 +258,7 @@ trait BtcSerializable[T] {
 }
 
 object Message extends BtcSerializer[Message] {
-  val MagicMain = 0xD9B4BEF9L
+  val MagicMain = 0xDBB6C0FBL
   val MagicTestNet = 0xDAB5BFFAL
   val MagicTestnet3 = 0x0709110BL
   val MagicNamecoin = 0xFEB4BEF9L

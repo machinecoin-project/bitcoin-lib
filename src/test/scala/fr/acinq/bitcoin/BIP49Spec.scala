@@ -1,7 +1,7 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
-import fr.acinq.bitcoin.Crypto.{PrivateKey, PublicKey}
-import fr.acinq.bitcoin.DeterministicWallet.KeyPath
+import de.nigho.machinecoin.Crypto.{PrivateKey, PublicKey}
+import de.nigho.machinecoin.DeterministicWallet.KeyPath
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner

@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.math.BigInteger
 import java.nio.ByteOrder
@@ -19,9 +19,9 @@ import scala.annotation.tailrec
 object Base58 {
 
   object Prefix {
-    val PubkeyAddress = 0.toByte
-    val ScriptAddress = 5.toByte
-    val SecretKey = 128.toByte
+    val PubkeyAddress = 50.toByte
+    val ScriptAddress = 20.toByte
+    val SecretKey = 178.toByte
     val PubkeyAddressTestnet = 111.toByte
     val ScriptAddressTestnet = 196.toByte
     val SecretKeyTestnet = 239.toByte

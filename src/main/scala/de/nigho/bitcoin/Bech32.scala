@@ -1,4 +1,3 @@
-package fr.acinq.bitcoin
 
 /**
   * See https://github.com/sipa/bech32/blob/master/bip-witaddr.mediawiki

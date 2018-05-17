@@ -1,8 +1,8 @@
-package fr.acinq.bitcoin.samples
+package de.nigho.machinecoin.samples
 
-import fr.acinq.bitcoin.Crypto.PublicKey
-import fr.acinq.bitcoin.DeterministicWallet._
-import fr.acinq.bitcoin.{Base58, Base58Check, Crypto, DeterministicWallet, MnemonicCode, Script}
+import de.nigho.machinecoin.Crypto.PublicKey
+import de.nigho.machinecoin.DeterministicWallet._
+import de.nigho.machinecoin.{Base58, Base58Check, Crypto, DeterministicWallet, MnemonicCode, Script}
 
 object FindMyAddresses extends App {
   /**

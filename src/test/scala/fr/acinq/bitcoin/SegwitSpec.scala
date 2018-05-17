@@ -1,9 +1,9 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.nio.ByteOrder
 
-import fr.acinq.bitcoin
-import fr.acinq.bitcoin.Crypto.PrivateKey
+import de.nigho.machinecoin
+import de.nigho.machinecoin.Crypto.PrivateKey
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner

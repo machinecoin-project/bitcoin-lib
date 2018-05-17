@@ -1,4 +1,4 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import java.security.cert._
 import java.security.{KeyStore, PrivateKey, PublicKey, Signature}

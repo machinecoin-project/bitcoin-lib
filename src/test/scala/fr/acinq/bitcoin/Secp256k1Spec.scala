@@ -1,6 +1,6 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
-import fr.acinq.bitcoin.Crypto.{PrivateKey, Scalar}
+import de.nigho.machinecoin.Crypto.{PrivateKey, Scalar}
 import org.bitcoin.{NativeSecp256k1, Secp256k1Context}
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite

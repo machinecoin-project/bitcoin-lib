@@ -1,7 +1,7 @@
-package fr.acinq.bitcoin
+package de.nigho.machinecoin
 
 import com.google.common.io.BaseEncoding
-import fr.acinq.bitcoin.Base58.Prefix
+import de.nigho.machinecoin.Base58.Prefix
 import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.junit.JUnitRunner
