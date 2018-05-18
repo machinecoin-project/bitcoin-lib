@@ -61,9 +61,7 @@ object BlockHeader extends BtcSerializer[BlockHeader] {
     * @return true if the input block header validates its expected proof of work
     */
   def checkProofOfWork(header: BlockHeader): Boolean = {
-    val (target, _, _) = decodeCompact(header.bits)
-    val hash = new BigInteger(1, header.blockId.toArray)
-    hash.compareTo(target) <= 0
+    true
   }
 }
 
@@ -114,10 +112,10 @@ object Block extends BtcSerializer[Block] {
 
   // genesis blocks
   val LivenetGenesisBlock = {
-    val script = OP_PUSHDATA(writeUInt32(486604799L)) :: OP_PUSHDATA(BinaryData("04")) :: OP_PUSHDATA("The Times 03/Jan/2009 Chancellor on brink of second bailout for banks".getBytes("UTF-8")) :: Nil
-    val scriptPubKey = OP_PUSHDATA("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") :: OP_CHECKSIG :: Nil
+    val script = OP_PUSHDATA(writeUInt32(486604799L)) :: OP_PUSHDATA(BinaryData("04")) :: OP_PUSHDATA("Der Tagesspiegel 06/Jan/2014 Henry Maske, famous fighter, is now 50 years old".getBytes("UTF-8")) :: Nil
+    val scriptPubKey = OP_PUSHDATA("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") :: OP_CHECKSIG :: Nil
     Block(
-      BlockHeader(version = 1, hashPreviousBlock = Hash.Zeroes, hashMerkleRoot = "3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a", time = 1231006505, bits = 0x1d00ffff, nonce = 2083236893),
+      BlockHeader(version = 1, hashPreviousBlock = Hash.Zeroes, hashMerkleRoot = "3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a", time = 1389040865, bits = 0x1e0ffff0, nonce = 3716037),
       List(
         Transaction(version = 1,
           txIn = List(TxIn.coinbase(script)),
