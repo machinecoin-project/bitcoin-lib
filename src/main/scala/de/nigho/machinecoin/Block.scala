@@ -115,7 +115,7 @@ object Block extends BtcSerializer[Block] {
     val script = OP_PUSHDATA(writeUInt32(486604799L)) :: OP_PUSHDATA(BinaryData("04")) :: OP_PUSHDATA("Der Tagesspiegel 06/Jan/2014 Henry Maske, famous fighter, is now 50 years old".getBytes("UTF-8")) :: Nil
     val scriptPubKey = OP_PUSHDATA("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") :: OP_CHECKSIG :: Nil
     Block(
-      BlockHeader(version = 1, hashPreviousBlock = Hash.Zeroes, hashMerkleRoot = "3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a", time = 1389040865, bits = 0x1e0ffff0, nonce = 3716037),
+      BlockHeader(version = 1, hashPreviousBlock = Hash.Zeroes, hashMerkleRoot = "36a9e41063f3e71466299d0ed9e8193c1c802a88b286016fa4a4d0c3bc384a5c", time = 1389040865, bits = 0x1e0ffff0, nonce = 3716037),
       List(
         Transaction(version = 1,
           txIn = List(TxIn.coinbase(script)),
