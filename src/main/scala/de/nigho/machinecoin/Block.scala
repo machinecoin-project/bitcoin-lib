@@ -79,9 +79,7 @@ case class BlockHeader(version: Long, hashPreviousBlock: BinaryData, hashMerkleR
   require(hashPreviousBlock.length == 32, "hashPreviousBlock must be 32 bytes")
   require(hashMerkleRoot.length == 32, "hashMerkleRoot must be 32 bytes")
 
-  lazy val hash_: BinaryData = Crypto.hash256(BlockHeader.write(this))
-    
-  lazy val hash: BinaryData = BinaryData("7231e8037796de412d350e509a56ed4fccddb20cfde1debf1c47a5ce9b871f6a")
+  lazy val hash = BinaryData("7231e8037796de412d350e509a56ed4fccddb20cfde1debf1c47a5ce9b871f6a")
 
   // hash is reversed here (same as tx id)
   lazy val blockId = BinaryData(hash.reverse)
